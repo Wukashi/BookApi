@@ -1,0 +1,5 @@
+add
+curl -X POST -i -H "Content-Type: application/json" -d '{"isbn":"34321","title":"Thinking in Java", "publisher":"Helion","type":"programming", "author":"Bruce Eckel"}' http://localhost:8080/books
+
+edit
+curl -X PUT -i -H "Content-Type: application/json" -d   '{"id":2,"isbn":"32222","title":"Thinking in C#",  "publisher":"IT Books","type":"programming", "author":"Bruce Eckel"}' http://localhost:8080/books
