@@ -29,7 +29,7 @@ public class Book {
         this.type = type;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 

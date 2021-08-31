@@ -49,11 +49,12 @@ public class MockBookService implements BookService{
     {
         List<Book> books = getList();
         for (Book b : books) {
-            if (book.getId() == b.getId()) {
+            if (book.getId().equals(b.getId())) {
                 b.setIsbn(book.getIsbn());
                 b.setTitle(book.getTitle());
                 b.setAuthor(book.getAuthor());
                 b.setPublisher(book.getPublisher());
+
                 b.setType(book.getType());
                 break;
             }
